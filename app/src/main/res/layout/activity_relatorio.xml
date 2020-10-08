@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Relatório Nutricional"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_marginTop="50dp"
         android:textStyle="italic"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <LinearLayout
+        android:id="@+id/textLinear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -33,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Nome:"
-            android:textSize="18dp"/>
+            android:textSize="14sp"/>
 
 
         <TextView
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Idade:"
-            android:textSize="18dp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"/>
 
         <TextView
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Peso:"
-            android:textSize="18dp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"/>
 
 
@@ -58,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Altura:"
-            android:textSize="18dp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"/>
 
 
@@ -67,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="IMC:"
-            android:textSize="18dp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"/>
 
 
@@ -76,10 +77,22 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="Classificação:"
-            android:textSize="18dp"
+            android:textSize="14sp"
             android:layout_marginTop="20dp"/>
 
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Realizar Novo Cálculo"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLinear"
+        android:onClick="novoCalculoButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
